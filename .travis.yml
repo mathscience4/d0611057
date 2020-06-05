@@ -1,0 +1,12 @@
+language: java
+os: linux
+dist: xenial
+
+jdk:
+    - openjdf11
+
+install:
+    - gradle assemble
+
+script:
+    - gradle test
