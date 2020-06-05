@@ -3,7 +3,7 @@ os: linux
 dist: xenial
 
 jdk:
-    - openjdf11
+    - openjdk11
 
 install:
     - gradle assemble
