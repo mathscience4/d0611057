@@ -1,16 +1,17 @@
 apply plugin: 'java'
+
+javadoc.options.encoding = 'UTF-8'
+compileJava.options.encoding = 'UTF-8'
+
 tasks.withType(JavaCompile){ //中文碼問題
     options.encoding = 'UTF-8'
 }
-
-
-compileJava.options.encoding = 'UTF-8'
 
 repositories {
     mavenCentral()
 }
 
-dependencies {  
+dependencies {
+    compile 'commons-codec:commons-codec:1.8'
     testImplementation 'junit:junit:4.+'
-    testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.0.0'
 }
