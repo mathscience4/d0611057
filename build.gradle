@@ -1,6 +1,8 @@
-apply plugin: 'java'
-apply plugin: 'jacoco'
-apply plugin: 'org.sonarqube' version '2.7'
+plugins {
+	"java"
+	"jacoco"
+	"org.sonarqube" version "2.7"
+}
 
 javadoc.options.encoding = 'UTF-8'
 compileJava.options.encoding = 'UTF-8'
